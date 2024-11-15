@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="registar.css">    
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="oquefazemos.html">O que Fazemos</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Interiores</a></li>
+                <li><a href="#">Arquitetura</a></li>
+                <li><a href="#">Vários Serviços</a></li>
+                <li><a href="#">Testemunhos</a></li>
+                <li><a href="pedirorçamento.html">Pedir Orçamento</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <button id="logoButton">
+                <img src="imagens/Logo.png" alt="Logo" style="height: 50px;">
+            </button>
+        </div>
+    </header>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Escolha uma opção</h2>
+            <button onclick="window.location.href='registar.html'">Registrar</button>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+    <main>
+
+        <div class="login-container">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Utilizador:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="btn" type="submit">Entrar</button>
+            <div class="footer">
+                <div class="logo">
+                    <img src="imagens/Logo.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Escolha uma opção</h2>
+            <button onclick="window.location.href='registar.html'">Registrar</button>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>Política de Privacidade</h4>
+                <ul>
+                    <li><a href="#">Afagamento</a></li>
+                    <li><a href="#">Climatização</a></li>
+                    <li><a href="#">Estores</a></li>
+                    <li><a href="#">Pavimentos</a></li>
+                    <li><a href="#">Remodelação</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Termos de Utilização</h4>
+                <ul>
+                    <li><a href="#">Canalização</a></li>
+                    <li><a href="#">Cozinhas</a></li>
+                    <li><a href="#">Interiores</a></li>
+                    <li><a href="#">Pinturas</a></li>
+                    <li><a href="#">Revestimentos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Recrutamento</h4>
+                <ul>
+                    <li><a href="#">Casas antigas</a></li>
+                    <li><a href="#">Electricidade</a></li>
+                    <li><a href="#">Projetos chave-na-mão</a></li>
+                    <li><a href="#">Tetos falsos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2007 - 2024 © MILOBRAS® - Todos os direitos reservados • Estrada de Paço de Arcos 66, 2735-308 Cacém • Tel. 212 428 080 • Tlm. 910 310 237 • geral@milobras.pt</p>
+        </div>
+    </footer>
+
+    <script>
+        // Obtém o modal
+        var modal = document.getElementById("myModal");
+
+        // Obtém o botão que abre o modal
+        var btn = document.getElementById("logoButton");
+
+        // Obtém o elemento <span> que fecha o modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Quando o usuário clica no botão da logo, abre o modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Quando o usuário clica no <span> (x), fecha o modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

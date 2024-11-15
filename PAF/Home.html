@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanoF</title>
+    <link rel="stylesheet" href="Style.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="oquefazemos.html">O que Fazemos</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Interiores</a></li>
+                <li><a href="#">Arquitetura</a></li>
+                <li><a href="#">Vários Serviços</a></li>
+                <li><a href="#">Testemunhos</a></li>
+                <li><a href="pedirorçamento.html">Pedir Orçamento</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>    
+            </ul>
+        </nav>
+        <div class="logo">
+            <button id="logoButton">
+                <img src="imagens/Logo.png" alt="Logo" style="height: 50px;">
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Escolha uma opção</h2>
+            <button onclick="window.location.href='registar.html'">Registrar</button>
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="welcome">
+            <img src="imagens/lojafora.png" alt="Bem-vindo">
+            <div class="welcome-text">
+                <h2>Bem-vindo!</h2>
+                <p>
+                    A nossa equipa especializada em Manutenção
+                    de Condomínios e Domicílios, está disponível para resolver seus problemas com agilidade e competência!
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="news">
+                <h3>Novidades</h3>
+                <p>O Microcimento é um inovador conceito de revestimento monolítico, representando contemporaneidade e proporcionando soluções para arquitetura, reabilitação e decoração de ambientes.</p>
+            </div>
+            
+            <div class="service-info">
+                <h3>Prestamos serviços na área da remodelação, renovação e reabilitação de imóveis</h3>
+                <p>Especializamo-nos em obras de remodelação, renovação e restauro de apartamentos, moradias e casas antigas. Prestamos todos os tipos de serviços de arquitetura e engenharia...</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-box">
+                    <img src="interiores.jpg" alt="Interiores">
+                    <h4>Interiores</h4>
+                </div>
+                <div class="service-box">
+                    <img src="arquitetura.jpg" alt="Arquitetura">
+                    <h4>Arquitetura</h4>
+                </div>
+                <div class="service-box">
+                    <img src="varios-servicos.jpg" alt="Vários Serviços">
+                    <h4>Vários Serviços</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div>
+                <h4>Política de Privacidade</h4>
+                <ul>
+                    <li><a href="#">Afagamento</a></li>
+                    <li><a href="#">Climatização</a></li>
+                    <li><a href="#">Estores</a></li>
+                    <li><a href="#">Pavimentos</a></li>
+                    <li><a href="#">Remodelação</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Termos de Utilização</h4>
+                <ul>
+                    <li><a href="#">Canalização
+                        <li><a href="#">Cozinhas</a></li>
+                        <li><a href="#">Interiores</a></li>
+                        <li><a href="#">Pinturas</a></li>
+                        <li><a href="#">Revestimentos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recrutamento</h4>
+                    <ul>
+                        <li><a href="#">Casas antigas</a></li>
+                        <li><a href="#">Electricidade</a></li>
+                        <li><a href="#">Projetos chave-na-mão</a></li>
+                        <li><a href="#">Tetos falsos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2007 - 2024 © MILOBRAS® - Todos os direitos reservados • Estrada de Paço de Arcos 66, 2735-308 Cacém • Tel. 212 428 080 • Tlm. 910 310 237 • geral@milobras.pt</p>
+            </div>
+        </footer>
+    
+        <script>
+            // Obtém o modal
+            var modal = document.getElementById("myModal");
+    
+            // Obtém o botão que abre o modal
+            var btn = document.getElementById("logoButton");
+    
+            // Obtém o elemento <span> que fecha o modal
+            var span = document.getElementsByClassName("close")[0];
+    
+            // Quando o usuário clica no botão da logo, abre o modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+    
+            // Quando o usuário clica no <span> (x), fecha o modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+    
+            // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+    </body>
+</html>
